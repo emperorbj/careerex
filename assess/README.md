@@ -1,50 +1,50 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# CareerEx Project Assessment
 
-Currently, two official plugins are available:
+A simple landing page of an Agrochemical Industry
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **React**: A powerful JavaScript library for building user interfaces.
+- **TypeScript**: A typed superset of JavaScript that provides type-checking and helps with better code quality.
+- **Tailwind CSS**: A utility-first CSS framework that allows rapid UI development with flexibility and consistency.
+- **Responsive Design**: The project is fully responsive, adapting to different screen sizes.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Getting Started
 
-- Configure the top-level `parserOptions` property like this:
+### Prerequisites
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Make sure you have the following installed on your machine:
+
+- **Node.js**: Download and install from [here](https://nodejs.org/).
+- **npm**: Installed with Node.js.
+- **pnpm** (optional): If you're using pnpm as your package manager, install it with:
+
+  ```bash
+  npm install -g pnpm
+
+
+## Installation
+
+1. clone the repository
+
+```bash
+  git clone https://github.com/emperorbj/careerex.git
+
 ```
+2. Navigate to the project directory
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+```bash
+    cd careerex
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+```
+3. Install the dependencies:
+```bash
+    pnpm install
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```
+4. Run the project
+```bash
+    pnpm dev
+
 ```
